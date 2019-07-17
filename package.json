@@ -1,0 +1,36 @@
+{
+  "name": "food-truck-finder",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/index.js",
+  "bin": {
+    "food-truck-finder": "bin/food-truck-finder"
+  },
+  "scripts": {},
+  "devDependencies": {
+    "husky": ">=1",
+    "lint-staged": ">=8",
+    "prettier": "1.18.2"
+  },
+  "dependencies": {
+    "arg": "^4.1.1",
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "esm": "^3.2.25",
+    "inquirer": "^6.5.0",
+    "ora": "^3.4.0",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

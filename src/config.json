@@ -1,0 +1,14 @@
+{
+  "services": {
+    "api": {
+      "baseURL": "http://data.sfgov.org/resource/bbb8-hzi6.json"
+    }
+  },
+  "state": {
+    "meta": {
+      "pagination": {
+        "limit": 10
+      }
+    }
+  }
+}
